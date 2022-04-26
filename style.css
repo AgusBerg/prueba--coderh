@@ -7,15 +7,16 @@
 .body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 .cabecera { 
     grid-area: 1 / 1 / 2 / 4; 
-    background: rgb(114,0,202);
-    background: linear-gradient(270deg, rgba(114,0,202,1) 0%, rgba(170,0,255,1) 71%);
+    width: auto;
+    height: 200px;
+    background-color: #f2f2f2;
     align-items: center;
     align-content: center;
     padding-left: 70px;
@@ -28,32 +29,24 @@
 .cabecera__navegacion__lista{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 100px;
     list-style: none;
     text-decoration: none;
     color: #7200CA;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 200px;
+    font-weight: 600px;
     letter-spacing: 5px;
 }
-
 
 
 .cabecera__navegacion__lista li{
     display: inline;
     margin-top: 40px;
+    
 }
 
-.cabecera__navegacion__lista__item {
-    text-decoration:none;
-}
-
-.cabecera__navegacion__lista__item li :hover{
-    transform:scaleY(1.5)
-
-}
 .cabecera__lista__links{
     text-decoration: none;
 } 
@@ -61,27 +54,34 @@
     color: #AA00FF;
 }
 
-.rectangulo__home{
+
+/*.rectangulo__home{
     background-color: beige;
     background-image: linear-gradient(to right, #AA00FF, #7200CA);
     border-radius: 40px;
     margin: 90px;
 
-}
+}*/
 .imagen__home { 
     grid-area: 2 / 1 / 4 / 2;
-    padding-left: 70px;
+    padding: 0px 70px;
     align-self: center;
     
 }
 
-.imagen__home :hover{
+.mockuphome{
+    border-radius: 90px;
+
+}
+
+/*.imagen__home :hover{
     transform: rotate(45deg);
     transition: 0.5s;
-}
+}*/
 
 .texto__home { 
     grid-area: 2 / 2 / 4 / 4; 
+    width: 650px;
     animation-name: rotartitulo;
     animation-iteration-count: infinite;
     animation-duration: 4s;
@@ -91,22 +91,25 @@
 
 .H1 {
     text-align: left;
-    color: #7200CA;
-    font-size: 40px;
+    background: linear-gradient(to right, #aa00ff, #7200ca80);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
     font-weight: 600;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
-    padding: 70px;
+    margin-top: 70px;
+    padding right: 70px;
     word-spacing: 5px;   
     letter-spacing: 3px;
 }
 
+
 .textobase{
-    padding-left: 70px;
-    padding-right: 90px;
-    text-align: left;
+    padding: 70px 0px;
+    text-align: justify ;
     color: grey;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -131,17 +134,24 @@
 }
 .H1b{
     text-align:center;
-    color: #7200CA;
+    color:#7200CA;
+    border: none;
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    transition: 0.3s;
    
 }
 
-.H1b :hover{
-    transform: scale(1.5);
-}
+
+
+.H1b:hover {opacity: 1}
+
+
+
+
 .Subt1{
     text-align:center;
     color: #7200CA;
@@ -151,6 +161,98 @@
     font-family: 'Roboto', sans-serif;
 
 }
+
+.video__testimonios{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    width: 1060px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 40px;
+
+}
+
+.column1 {
+    width: 300px;
+    height: 200px;
+  
+          
+}
+
+.column2 {
+    width: 300px;
+    height: 200px;
+    
+}
+
+.column3{
+    width: 300px;
+    height: 200px;
+    
+}
+
+.sumate{
+    padding: 70px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    background-color: #7200CA;
+}
+
+.sumatetext{
+    background-color: #f2f2f2;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7200CA;
+    margin: 20px;
+    padding: 50px;
+    display: inline;
+    position: relative;
+    top: 40px;
+    opacity: 0.6;
+    transition: 0.3s;
+   
+}
+
+
+
+.sumatetext:hover {opacity: 1}
+
+
+
+
+.formulario {
+    padding-top: 80px;
+    padding-left: 70px;
+    padding-bottom: 80px;
+}
+
+.input{
+    font-family:'Roboto', sans-serif;
+    font-size: 12px;
+    color: #AA00FF;
+    border-radius: 10px;
+}
+
+.input2{
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: #AA00FF;
+    border-radius: 10px;    
+
+}
+
+.mapa{
+    padding-left: 70px;
+}
+
+
 
 .footer { 
     grid-area: 5 / 1 / 6 / 4; 
