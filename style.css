@@ -29,7 +29,7 @@
 .cabecera__navegacion__lista{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 100px;
     list-style: none;
     text-decoration: none;
