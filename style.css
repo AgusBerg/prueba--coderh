@@ -118,6 +118,10 @@
     
 } 
 
+.textobasetuki{
+    color: #7200CA;
+}
+
 .estadísticas { 
     grid-area: 4 / 1 / 5 / 4; 
     background-color: #f2f2f2;
