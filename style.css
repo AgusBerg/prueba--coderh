@@ -69,15 +69,17 @@
     
 }
 
+.imagen__home :hover{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
 .mockuphome{
     border-radius: 90px;
 
 }
 
-/*.imagen__home :hover{
-    transform: rotate(45deg);
-    transition: 0.5s;
-}*/
+
 
 .texto__home { 
     grid-area: 2 / 2 / 4 / 4; 
