@@ -36,32 +36,17 @@
     color: #7200CA;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 200px;
+    font-weight: 600px;
     letter-spacing: 5px;
 }
-
 
 
 .cabecera__navegacion__lista li{
     display: inline;
     margin-top: 40px;
-    transform: rotate(45deg);
-    transition: 0.5s;
+    
 }
 
-.cabecera__navegacion__lista li :hover{
-    transform: rotate(45deg);
-    transition: 0.5s;
-}
-
-.cabecera__navegacion__lista__item {
-    text-decoration:none;
-}
-
-.cabecera__navegacion__lista__item li :hover{
-    transform:scaleY(1.5)
-
-}
 .cabecera__lista__links{
     text-decoration: none;
 } 
@@ -148,17 +133,24 @@
 }
 .H1b{
     text-align:center;
-    color: #7200CA;
+    color:#7200CA;
+    border: none;
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    transition: 0.3s;
    
 }
 
-.H1b :hover{
-    transform: scale(1.5);
-}
+
+
+.H1b:hover {opacity: 1}
+
+
+
+
 .Subt1{
     text-align:center;
     color: #7200CA;
