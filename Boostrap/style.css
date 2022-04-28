@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.cabecera { 
+    background-color: #f2f2f2;
+    
+    
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #7200CA;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #AA00FF;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600px;
+    letter-spacing: 5px;
+}
+
+.H1 {
+    text-align: center;
+    background: linear-gradient(to right, #aa00ff, #7200ca80);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 70px;
+    padding right: 70px;
+    word-spacing: 5px;   
+    letter-spacing: 3px;
+}
+
+ 
+.container{
+    background-color: transparent;
+    height: 400px;
+}
+
+.mockuphome{
+    border-radius: 60px;
+    width: 60%;
+}
+
+.textobase{
+    padding: 70px 0px;
+    text-align: justify ;
+    color: grey;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+} 
+
+
+#carouselExampleIndicators{
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.card{
+    border: none;
+}
+.card-img-top{
+    width: 40%;
+    margin-left: 25%;
+}
+
+.footer { 
+    grid-area: 5 / 1 / 6 / 4; 
+    background-color: #f2f2f2;
+    background-image: url(./imagenes/bg.png);
+    padding-left: 70px;
+    padding-right: 70px;
+    color: #7200CA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+    
+.footer__nav {
+    justify-content:space-around;
+    
+}
+    
+    
+.footer__nav__lista {
+    color: #7200CA    
+}
+    
+.textofooter{
+    margin: 30px;   
+    text-align: left;
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
