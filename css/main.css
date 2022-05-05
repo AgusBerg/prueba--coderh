@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.cabecera {
+  background-color: #f2f2f2; }
+  .cabecera .navbar-light .navbar-nav .nav-link.active, .cabecera .navbar-light .navbar-nav .show > .nav-link {
+    color: #7200CA; }
+  .cabecera .navbar-light .navbar-nav .nav-link {
+    color: #AA00FF; }
+  .cabecera .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600px;
+    letter-spacing: 5px; }

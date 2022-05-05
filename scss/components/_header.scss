@@ -1,0 +1,22 @@
+.cabecera { 
+    background-color: $color-secundario;
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: $color-principal;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $color-acento;
+
+    }
+
+    .nav-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 600px;
+        letter-spacing: 5px;
+    }
+
+
+}
+
