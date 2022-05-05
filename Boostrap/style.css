@@ -25,7 +25,7 @@
     letter-spacing: 5px;
 }
 
-.H1 {
+.H1{
     text-align: center;
     background: linear-gradient(to right, #aa00ff, #7200ca80);
     -webkit-background-clip: text;
@@ -34,16 +34,21 @@
     font-weight: 600;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
-    margin-top: 70px;
-    padding right: 70px;
-    word-spacing: 5px;   
-    letter-spacing: 3px;
+    text-align: center;
+    margin-top:70px;
+    transition: ease-in .4s;transition: ease-in .4s;
+}
+    
+
+.H1:hover {
+    transform: scale(0.5);
 }
 
- 
+
 .container{
     background-color: transparent;
-    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .mockuphome{
@@ -69,16 +74,76 @@
     margin-left: 10%;
 }
 
-.card{
+.H1b{
+    text-align:center;
+    color:#7200CA;
     border: none;
-}
-.card-img-top{
-    width: 40%;
-    margin-left: 25%;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    transition: 0.3s;
+   
 }
 
+
+
+.H1b:hover {opacity: 1}
+
+
+
+
+.Subt1{
+    text-align:center;
+    color: #7200CA;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    background: #AA00FF;
+    transition: background ease-in .3s;
+
+}
+
+
+
+.Subt1:hover {
+    background: #f2f2f2
+}
+*/
+
+.sumate {
+    padding: 40px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    background-color: #7200CA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sumatetext{
+    background-color: #f2f2f2;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7200CA;
+    margin: 10px;
+    padding: 50px;
+    top: 40px;
+    opacity: 0.6;
+    transition: 0.3s;
+   
+}
+
+.sumatetext:hover {opacity: 1}
+
+
+
 .footer { 
-    grid-area: 5 / 1 / 6 / 4; 
     background-color: #f2f2f2;
     background-image: url(./imagenes/bg.png);
     padding-left: 70px;
@@ -109,7 +174,6 @@
     color: grey;
     font-size: 12px;
 }
-
 
 
 
