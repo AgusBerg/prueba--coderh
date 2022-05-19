@@ -4,4 +4,12 @@
     display: flex;
     width: $tamanio-medio;
 
+    @include mediaQuery(mobile){
+        background-color: blue;
+    }
+
+    @include mediaQuery(tablet){
+        background-color: red;
+    }
+
 }
