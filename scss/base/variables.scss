@@ -1,4 +1,89 @@
-$color-principal: #7200CA;
-$color-secundario: #f2f2f2;
-$color-acento: #AA00FF;
- 
+$tamanio-total: 100%;
+$tamanio-medio: $tamanio-total/2;
+$tamanio-cuarto: $tamanio-medio/2;
+
+
+/* MAPS */
+
+$colores:(
+    color-principal: #7200CA,
+    color-secundario: #f2f2f2,
+    color-acento: #AA00FF,
+);
+
+$tamanio-tipografia:(
+    titulos: 40px,
+    subtitulos: 20px,
+    texto-base: 18px,
+    textos-chicos: 14px
+);
+
+
+
+
+
+
+ EXTEND 
+
+%flex-center{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+};
+
+
+@mixin flexbox ($direction, $align) {
+    display: flex;
+    direction: $direction;
+    align-items: $align ;
+
+    @if $direction ==column {
+        justify-content: center;
+     
+    } @else {
+        justify-content: space-evenly
+    }
+    
+};
+
+
+@mixin botones ($bg-color){
+    width:  fit-content;
+    padding: 5px, 10px;
+    background-color: $bg-color;
+
+
+};
+
+@mixin mediaQuery ($pantalla) {
+
+    @if $pantalla == 'mobile' {
+        @media only screen and (max-width: 500px) {
+            @content;
+
+        }
+
+    };
+
+    @if $pantalla == 'tablet' {
+        @media only screen and (max-width: 780px) {
+            @content;
+
+        }
+
+        
+    };
+
+    @if $pantalla == 'desktop' {
+        @media only screen and (max-width: 1024px) {
+            @content;
+
+        }
+
+    };
+   
+};
+
+@each $var in list {
+    
+}

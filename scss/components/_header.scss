@@ -1,22 +1,29 @@
 .cabecera { 
-    background-color: $color-secundario;
+    background-color: map-get($colores, color-secundario);
 
     .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        color: $color-principal;
+        color: map-get($colores, color-principal);
+        
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: $color-acento;
+        color: map-get($colores, color-acento);
 
     }
 
     .nav-link {
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-weight: 600px;
+        font-size: map-get($tamanio-tipografia, textos-chicos);
+        font-weight: 200;
         letter-spacing: 5px;
     }
+
+    .mobile {
+        color: map-get($colores, color-secundario);
+    }
+
 
 
 }
 
+    

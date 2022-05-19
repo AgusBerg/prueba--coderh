@@ -1,0 +1,7 @@
+.formulario{
+    background-color:map-get($colores, color-secundario);
+    color: map-get($colores, color-principal);
+    display: flex;
+    width: $tamanio-medio;
+
+}
